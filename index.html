@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+		<head>
+				<meta charset="UTF-8"/>
+				<title>Chatter</title>
+				<link rel="stylesheet" href="https://unpkg.com/picnic">
+				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+				<style>
+				 #logo {
+						 font-size: 120px;
+						 line-height: 80px;
+				 }
+
+				 section {
+						 padding-top: 3em;
+						 margin: auto;
+						 width: 80%;
+				 }
+
+				 section a {
+						 color: black;
+						 text-decoration: underline;
+				 }
+				 section a:hover {
+						 color: gray;
+				 }
+				</style>
+		</head>
+		<body>
+				<nav>
+						<a href="" class="brand">
+								<i class="fab fa-rocketchat"></i>
+								<span>Chatter</span>
+						</a>
+
+						<div class="menu">
+								<a href="" class="pseudo button">Home</a>
+								<a href="/lab/chatter/play" class="pseudo button">Play</a>
+						</div>
+				</nav>
+
+				
+				<section>
+						<h1 id="logo">
+								Chatter<br>
+								<span style="color:#ddd; font-size: 70px; line-height: 50px">Streaming Chat Application<br>
+										Built with PHP</span><br>
+						</h1>
+
+						<p>This is a toy web application for chattering with people all over the world.</p>
+
+						<h2>> Architecture</h2>
+						<p>
+								What technology will you use when you want to create a chat app?
+								The Websocket Protocol (bidirectional, asynchronized connection between the server and the client) or WebRTC or the basic client-server-database architecture
+								is the common way to do that. I've tested WebRTC and The Websocket Protocoll and these ways didn't
+								work properly in this server due to the heavy restriction.
+						</p>
+						<p>
+								The asyncronized connection is one of the important things to do that.
+								I found <a href="https://developer.mozilla.org/ja/docs/Web/API/EventSource">The EventSource Interface</a>, and it
+								works fine. So I created the test app using asyncronized connections.
+						</p>
+						<h5><a data-no-instant href="https://cretgp.com">CreativeGP</a> (C) 2018</h5>
+				</section>
+
+
+				<!-- <script data-no-instant src="https://cdnjs.cloudflare.com/ajax/libs/instantclick/3.0.1/instantclick.min.js"></script>
+						 <script data-no-instant>InstantClick.init();</script> -->
+				
+		</body>
+</html>
